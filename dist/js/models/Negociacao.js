@@ -11,4 +11,3 @@ export class Negociacao {
         return this.valor * this.quantidade;
     }
 }
-const n = new Negociacao(new Date(), 1, 1);

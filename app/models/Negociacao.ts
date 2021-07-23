@@ -16,4 +16,3 @@ export class Negociacao {
 
 }
 
-const n = new Negociacao(new Date(), 1, 1);
