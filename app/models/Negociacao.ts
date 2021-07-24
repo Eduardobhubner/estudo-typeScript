@@ -14,5 +14,14 @@ export class Negociacao {
         return this.valor * this.quantidade;
     }
 
+    public static CriaDe(dataString:string, quantidadeString: string, valorString: string): Negociacao{
+
+        const exp = /-/g;
+        const data = new Date(dataString.replace(exp, ','));
+        const quantidade = parseInt(quantidadeString);
+        const valor = parseFloat(valorString);
+        return new Negociacao(data, quantidade, valor);
+    }
+
 }
 
