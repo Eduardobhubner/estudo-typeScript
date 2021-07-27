@@ -14,7 +14,7 @@ export class Negociacao {
         return this.valor * this.quantidade;
     }
 
-    public static CriaDe(dataString:string, quantidadeString: string, valorString: string): Negociacao{
+    public static CriaDe(dataString: string, quantidadeString: string, valorString: string): Negociacao {
 
         const exp = /-/g;
         const data = new Date(dataString.replace(exp, ','));
